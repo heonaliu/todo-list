@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
@@ -32,6 +32,20 @@ function App() {
     setTodoValue(valueToBeEdited)
     handleDeleteTodos(index) // delete it since we're editing it
   }
+
+  useEffect(() => {
+    if (!localStorage) {
+      return
+    }
+
+    let localTodos = localStorage.getItem('todos')
+    if (!localTodos) {
+      return
+    }
+    localTodos = JSON.parse(localTodos).todos
+    setTodos(localTodos)
+
+  }, [])
 
   return (
     <>
