@@ -3,6 +3,7 @@ export default function TodoInput() {
     <>
       <header>
         <input placeholder="Enter spooky todo..." />
+        <button>Add</button>
       </header>
     </>
   );
