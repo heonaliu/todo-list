@@ -1,7 +1,13 @@
-import React from 'react'
+import React from "react";
 
 export default function TodoList() {
+  let todos = ["scare the neighbors", "Find goblins", "pumpkin pie"];
+
   return (
-    <div>TodoList</div>
-  )
+    <div>
+      {todos.map((todo, todoIndex) => {
+        return <li key={todoIndex}>{todo}</li>;
+      })}
+    </div>
+  );
 }
