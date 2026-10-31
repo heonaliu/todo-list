@@ -34,3 +34,10 @@ header input {
   outline: none;
   width: 100%
 }
+
+header button {
+  border-radius: 14px;
+  background: transparent;
+  transition-duration: 200ms;
+  cursor: pointer;
+}
