@@ -9,9 +9,16 @@ function App() {
     "pumpkin pie",
   ]);
 
+  function handleAddTodos(newTodo) {
+    const newTodoList = [...todos, newTodo]
+    setTodos(newTodoList)
+
+    //when the state changes of the todo, the DOM changes to match new values
+  }
+
   return (
     <>
-      <TodoInput todos={todos} />
+      <TodoInput handleAddTodos={handleAddTodos} />
       <TodoList todos={todos} />
     </>
   );
