@@ -1,7 +1,9 @@
 export default function TodoInput() {
   return (
     <>
-      <h2>HI</h2>
+      <header>
+        <input placeholder="Enter spooky todo..." />
+      </header>
     </>
   );
 }
