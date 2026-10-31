@@ -11,7 +11,7 @@
   display: flex;
   flex-direction: column;
   padding: 14px;
-  background: #eff6ff;
+  background: #ffdacf;
   gap: 14px;
 }
 
@@ -69,6 +69,7 @@ p {
   align-items: center;
   gap: 14px;
   padding: 14px;
+  margin-top: 15px;
   border-radius: 14px;
   background: white;
 }
