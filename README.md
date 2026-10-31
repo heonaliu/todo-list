@@ -20,3 +20,4 @@
 - Using map function, I learn that html can be applied over several elements just by calling it once
 - each key in the list needs to have some unique identifier (which in my case used the index of element)
 - components only go down. hierarchy matters.
+- usually people create "stateful" variables (with React's useState) if it's gonna be a variable the user will interact with and change
