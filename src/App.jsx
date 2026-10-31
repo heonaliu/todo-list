@@ -10,47 +10,58 @@ function App() {
   ]);
   const [todoValue, setTodoValue] = useState("");
 
+  function persistData(newList) {
+    localStorage.setItem("todos", JSON.stringify({ todos: newList }));
+  }
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo];
     setTodos(newTodoList);
-
+    persistData(newTodoList);
     //when the state changes of the todo, the DOM changes to match new values
   }
 
   function handleDeleteTodos(index) {
     const newTodoList = todos.filter((todo, todoIndex) => {
-      return todoIndex !== index
+      return todoIndex !== index;
       // returns every new todo that is not in the index we want to delete
-    })
-    setTodos(newTodoList)
+    });
+    setTodos(newTodoList);
+    persistData(newTodoList);
   }
 
   function handleEditTodos(index) {
-    const valueToBeEdited = todos[index]
+    const valueToBeEdited = todos[index];
     //take the value and set it to the text box
-    setTodoValue(valueToBeEdited)
-    handleDeleteTodos(index) // delete it since we're editing it
+    setTodoValue(valueToBeEdited);
+    handleDeleteTodos(index); // delete it since we're editing it
   }
 
   useEffect(() => {
     if (!localStorage) {
-      return
+      return;
     }
 
-    let localTodos = localStorage.getItem('todos')
+    let localTodos = localStorage.getItem("todos");
     if (!localTodos) {
-      return
+      return;
     }
-    localTodos = JSON.parse(localTodos).todos
-    setTodos(localTodos)
-
-  }, [])
+    localTodos = JSON.parse(localTodos).todos;
+    setTodos(localTodos);
+  }, []);
 
   return (
     <>
-      <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
-      <TodoList handleEditTodos={handleEditTodos} handleDeleteTodos={handleDeleteTodos} todos={todos} />
+      <TodoInput
+        todoValue={todoValue}
+        setTodoValue={setTodoValue}
+        handleAddTodos={handleAddTodos}
+      />
+      <TodoList
+        handleEditTodos={handleEditTodos}
+        handleDeleteTodos={handleDeleteTodos}
+        todos={todos}
+      />
     </>
   );
 }
