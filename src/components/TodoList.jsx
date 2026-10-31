@@ -8,7 +8,7 @@ export default function TodoList() {
     <div>
       {todos.map((todo, todoIndex) => {
         return (
-          <TodoCard key={todoIndex} todo ></TodoCard>
+          <TodoCard key={todoIndex} todo >{todo}</TodoCard>
         );
       })}
     </div>
