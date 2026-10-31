@@ -8,6 +8,8 @@ function App() {
     "find goblins",
     "pumpkin pie",
   ]);
+  const [todoValue, setTodoValue] = useState("");
+
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo];
@@ -24,14 +26,17 @@ function App() {
     setTodos(newTodoList)
   }
 
-  function handlEditTodos(index) {
-
+  function handleEditTodos(index) {
+    const valueToBeEdited = todos[index]
+    //take the value and set it to the text box
+    setTodoValue(valueToBeEdited)
+    handleDeleteTodos(index) // delete it since we're editing it
   }
 
   return (
     <>
-      <TodoInput handleAddTodos={handleAddTodos} />
-      <TodoList handleDeleteTodos={handleDeleteTodos} todos={todos} />
+      <TodoInput todoValue={todoValue} setTodoValue={setTodoValue} handleAddTodos={handleAddTodos} />
+      <TodoList handleEditTodos={handleEditTodos} handleDeleteTodos={handleDeleteTodos} todos={todos} />
     </>
   );
 }
