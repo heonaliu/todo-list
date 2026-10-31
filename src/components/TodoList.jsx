@@ -9,7 +9,7 @@ export default function TodoList(props) {
     <div>
       {todos.map((todo, todoIndex) => {
         return (
-          <TodoCard key={todoIndex} todo>
+          <TodoCard {...props} key={todoIndex} index={todoIndex}>
             {todo}
           </TodoCard>
         );
