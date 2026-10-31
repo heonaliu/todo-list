@@ -9,7 +9,7 @@
 - 
 
 ## Challenges
-
+- had issues trying to get the library icons to show up - using cdnjs.com would is a library that i've used before but not that often
 
 ## Things I'm Proud Of
 - 
