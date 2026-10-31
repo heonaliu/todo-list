@@ -6,7 +6,7 @@ export default function TodoList() {
   return (
     <div>
       {todos.map((todo, todoIndex) => {
-        return <li key={todoIndex}>{todo}</li>;
+        return <li className="todoItem" key={todoIndex}>{todo}</li>;
       })}
     </div>
   );
