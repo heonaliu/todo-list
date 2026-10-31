@@ -1,8 +1,13 @@
+import { useState } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
 function App() {
-  let todos = ["scare the neighbors", "Find goblins", "pumpkin pie"];
+  const [todos, setTodos] = useState([
+    "scare the neighbors",
+    "Find goblins",
+    "pumpkin pie",
+  ]);
 
   return (
     <>
