@@ -1,6 +1,6 @@
 export default function TodoCard() {
     return (
-        <div>
+        <div className="text-box">
             TodoInput
         </div>
     )
