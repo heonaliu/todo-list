@@ -3,10 +3,10 @@
 ## Live link:
 
 ## Project Description
-- Building on my continuation of simple projects, this is a to do list.
+- This is a small todo list in the theme of halloween. I wanted a project where I could build something small while integrating my artwork with it! I thought this was fun since I was making this on the spooky season!
 
 ## Purpose of Building
-- 
+- Continuation of small react projects till I master React. 
 
 ## Challenges
 - had issues trying to get the library icons to show up - using cdnjs.com would is a library that i've used before but not that often
@@ -15,6 +15,7 @@
 
 ## Things I'm Proud Of
 - working with children hierarchy again! not really an easy concept for me
+- using local storate too. not something I work around with alot.
 
 ## Things I learned:
 - Using map function, I learn that html can be applied over several elements just by calling it once
