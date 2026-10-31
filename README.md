@@ -21,3 +21,4 @@
 - each key in the list needs to have some unique identifier (which in my case used the index of element)
 - components only go down. hierarchy matters.
 - usually people create "stateful" variables (with React's useState) if it's gonna be a variable the user will interact with and change
+- {...props} spreads all the props apart and you can put it as a prop and pass it to child component
