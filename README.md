@@ -1,5 +1,7 @@
 # Halloween Themed TO DO List!
 
+![Ghost!](src/assets/ghost.png)
+
 ## Live link:
 
 ## Project Description
@@ -16,6 +18,7 @@
 ## Things I'm Proud Of
 - working with children hierarchy again! not really an easy concept for me
 - using local storate too. not something I work around with alot.
+- Proud of incorporating my own art for the first time because it's been a long while since I've drawn things for my own projects
 
 ## Things I learned:
 - Using map function, I learn that html can be applied over several elements just by calling it once
@@ -23,3 +26,5 @@
 - components only go down. hierarchy matters.
 - usually people create "stateful" variables (with React's useState) if it's gonna be a variable the user will interact with and change
 - {...props} spreads all the props apart and you can put it as a prop and pass it to child component
+
+![Pumpkin](src/assets/pumpkin.png)
