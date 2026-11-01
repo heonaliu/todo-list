@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
+import ghost from "./assets/ghost.png";
+import pumpkin from "./assets/pumpkin.png";
 
 function App() {
   const [todos, setTodos] = useState([
@@ -52,6 +54,7 @@ function App() {
 
   return (
     <>
+      <img src={ghost} className="title-image" />
       <TodoInput
         todoValue={todoValue}
         setTodoValue={setTodoValue}
@@ -62,6 +65,7 @@ function App() {
         handleDeleteTodos={handleDeleteTodos}
         todos={todos}
       />
+      <img src={pumpkin}/>
     </>
   );
 }
