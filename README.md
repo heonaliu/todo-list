@@ -2,7 +2,8 @@
 
 ![Ghost!](src/assets/ghost.png)
 
-## Live link:
+## Live link: 
+https://spooky-todo-list.vercel.app/
 
 ## Project Description
 - This is a small todo list in the theme of halloween. I wanted a project where I could build something small while integrating my artwork with it! I thought this was fun since I was making this on the spooky season!
